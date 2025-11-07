@@ -1,3 +1,9 @@
 *
 !.gitignore
 !README.md
+
+# Allow parent folders
+!*/
+
+# List specific files and folders to keep
+!Patches/Eyes/Eyes.wire
