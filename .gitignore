@@ -7,3 +7,4 @@
 
 # List specific files and folders to keep
 !Patches/Eyes/Eyes.wire
+!Patches/InfiniteCircleZoom/InfiniteCircleZoom.wire
