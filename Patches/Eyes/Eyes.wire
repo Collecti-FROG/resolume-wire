@@ -117,14 +117,29 @@
 				]
 			}
 		],
-		"inputOrder": [
-			66,
-			70,
-			71,
-			73,
-			77,
-			78
-		],
+		"inputOrder": {
+			"groups": {},
+			"roots": [
+				{
+					"node": 66
+				},
+				{
+					"node": 70
+				},
+				{
+					"node": 71
+				},
+				{
+					"node": 73
+				},
+				{
+					"node": 77
+				},
+				{
+					"node": 78
+				}
+			]
+		},
 		"meta": {
 			"author": "",
 			"category": "effect",
@@ -133,7 +148,7 @@
 				"name": "Wire",
 				"version": {
 					"major": 7,
-					"minor": 18,
+					"minor": 23,
 					"patch": 0
 				}
 			},
@@ -161,7 +176,7 @@
 				"name": "Wire",
 				"version": {
 					"major": 7,
-					"minor": 19,
+					"minor": 23,
 					"patch": 1
 				}
 			},
@@ -193,6 +208,10 @@
 						"type": "type",
 						"value": "float"
 					},
+					"scale-anchor-type": {
+						"type": "type",
+						"value": "bool"
+					},
 					"scale-type": {
 						"type": "type",
 						"value": "float2"
@@ -210,7 +229,7 @@
 				},
 				"class": {
 					"id": "77697265-9225-4009-9D2D-5F898E94CC33",
-					"version": 2
+					"version": 3
 				},
 				"clock": "video",
 				"color": "ffff6a00",
@@ -237,6 +256,10 @@
 							1
 						]
 					},
+					"scale-anchor": {
+						"type": "bool",
+						"value": false
+					},
 					"translation": {
 						"type": "float2",
 						"value": [
@@ -246,13 +269,15 @@
 					}
 				},
 				"hidden": [
+					"anchor-type",
 					"flow",
-					"instances",
 					"input-type",
-					"translation-type",
+					"instances",
 					"rotation-type",
+					"scale-anchor",
+					"scale-anchor-type",
 					"scale-type",
-					"anchor-type"
+					"translation-type"
 				],
 				"name": "Transform",
 				"thumbnail_visible": true
@@ -350,13 +375,13 @@
 				},
 				"class": {
 					"id": "77697265-4C9E-4F75-B4F0-5415B713EA1B",
-					"version": 2
+					"version": 4
 				},
 				"clock": "video",
 				"color": "ff02bbff",
 				"constants": {
 					"input": {
-						"type": "float4",
+						"type": "color",
 						"value": [
 							1,
 							1,
@@ -366,8 +391,8 @@
 					}
 				},
 				"hidden": [
-					"instances",
 					"flow",
+					"instances",
 					"options-count",
 					"widget"
 				],
@@ -393,7 +418,7 @@
 				},
 				"class": {
 					"id": "77697265-9518-4E69-899B-66B8C527C6EB",
-					"version": 2
+					"version": 3
 				},
 				"clock": "video",
 				"color": "ffff6a00",
@@ -403,7 +428,7 @@
 						"value": false
 					},
 					"color": {
-						"type": "float4",
+						"type": "color",
 						"value": [
 							1,
 							0,
@@ -434,10 +459,10 @@
 				},
 				"hidden": [
 					"bypass",
-					"mode",
 					"greysKeep",
 					"greysTolerance",
-					"instances"
+					"instances",
+					"mode"
 				],
 				"name": "Colorize",
 				"thumbnail_visible": true
@@ -464,6 +489,10 @@
 						"type": "type",
 						"value": "float"
 					},
+					"scale-anchor-type": {
+						"type": "type",
+						"value": "bool"
+					},
 					"scale-type": {
 						"type": "type",
 						"value": "float2"
@@ -481,7 +510,7 @@
 				},
 				"class": {
 					"id": "77697265-9225-4009-9D2D-5F898E94CC33",
-					"version": 2
+					"version": 3
 				},
 				"clock": "video",
 				"color": "ffff6a00",
@@ -508,6 +537,10 @@
 							1
 						]
 					},
+					"scale-anchor": {
+						"type": "bool",
+						"value": false
+					},
 					"translation": {
 						"type": "float2",
 						"value": [
@@ -517,13 +550,15 @@
 					}
 				},
 				"hidden": [
+					"anchor-type",
 					"flow",
-					"instances",
 					"input-type",
-					"translation-type",
+					"instances",
 					"rotation-type",
+					"scale-anchor",
+					"scale-anchor-type",
 					"scale-type",
-					"anchor-type"
+					"translation-type"
 				],
 				"name": "Transform",
 				"thumbnail_visible": true
@@ -567,7 +602,7 @@
 				},
 				"class": {
 					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
-					"version": 3
+					"version": 4
 				},
 				"clock": "video",
 				"color": "ff02bbff",
@@ -578,13 +613,13 @@
 					}
 				},
 				"hidden": [
-					"instances",
 					"flow",
-					"has-min",
 					"has-max",
+					"has-min",
+					"instances",
 					"options-count",
-					"widget",
-					"unit"
+					"unit",
+					"widget"
 				],
 				"name": "Position X",
 				"thumbnail_visible": true
@@ -628,7 +663,7 @@
 				},
 				"class": {
 					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
-					"version": 3
+					"version": 4
 				},
 				"clock": "video",
 				"color": "ff02bbff",
@@ -639,13 +674,13 @@
 					}
 				},
 				"hidden": [
-					"instances",
 					"flow",
-					"has-min",
 					"has-max",
+					"has-min",
+					"instances",
 					"options-count",
-					"widget",
-					"unit"
+					"unit",
+					"widget"
 				],
 				"name": "Position Y",
 				"thumbnail_visible": true
@@ -737,7 +772,7 @@
 				},
 				"class": {
 					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
-					"version": 3
+					"version": 4
 				},
 				"clock": "video",
 				"color": "ff02bbff",
@@ -748,15 +783,15 @@
 					}
 				},
 				"hidden": [
-					"instances",
 					"flow",
-					"has-min",
-					"min",
 					"has-max",
+					"has-min",
+					"instances",
 					"max",
+					"min",
 					"options-count",
-					"widget",
-					"unit"
+					"unit",
+					"widget"
 				],
 				"name": "Rotation",
 				"thumbnail_visible": true
@@ -808,7 +843,7 @@
 				},
 				"class": {
 					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
-					"version": 3
+					"version": 4
 				},
 				"clock": "video",
 				"color": "ff02bbff",
@@ -819,15 +854,15 @@
 					}
 				},
 				"hidden": [
-					"instances",
 					"flow",
-					"has-min",
-					"min",
 					"has-max",
+					"has-min",
+					"instances",
 					"max",
+					"min",
 					"options-count",
-					"widget",
-					"unit"
+					"unit",
+					"widget"
 				],
 				"name": "Scale",
 				"thumbnail_visible": true
@@ -879,7 +914,7 @@
 				},
 				"class": {
 					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
-					"version": 3
+					"version": 4
 				},
 				"clock": "video",
 				"color": "ff02bbff",
@@ -890,15 +925,15 @@
 					}
 				},
 				"hidden": [
-					"instances",
 					"flow",
-					"has-min",
-					"min",
 					"has-max",
+					"has-min",
+					"instances",
 					"max",
+					"min",
 					"options-count",
-					"widget",
-					"unit"
+					"unit",
+					"widget"
 				],
 				"name": "Eye open",
 				"thumbnail_visible": true
@@ -906,16 +941,15 @@
 		},
 		"ui": {
 			"camera": {
-				"x": -318.8966064453125,
-				"y": -1117.7978515625,
-				"zoom": 0.88891345262527466
+				"x": -432.958953857421875,
+				"y": -1528.7061767578125,
+				"zoom": 0.53500813245773315
 			},
 			"selection": [
-				"78"
+				"42"
 			]
 		}
 	},
-	"resources": {},
 	"ui": {
 		"audio": {
 			"routing": {
