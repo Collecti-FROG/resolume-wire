@@ -198,16 +198,6 @@
 			},
 			{
 				"from": [
-					49,
-					"output"
-				],
-				"to": [
-					56,
-					"input"
-				]
-			},
-			{
-				"from": [
 					43,
 					"output"
 				],
@@ -385,6 +375,36 @@
 					86,
 					"frequency"
 				]
+			},
+			{
+				"from": [
+					49,
+					"output"
+				],
+				"to": [
+					92,
+					"input"
+				]
+			},
+			{
+				"from": [
+					92,
+					"output"
+				],
+				"to": [
+					56,
+					"input"
+				]
+			},
+			{
+				"from": [
+					93,
+					"output"
+				],
+				"to": [
+					92,
+					"color"
+				]
 			}
 		],
 		"inputOrder": {
@@ -401,6 +421,9 @@
 				},
 				{
 					"node": 89
+				},
+				{
+					"node": 93
 				}
 			]
 		},
@@ -448,7 +471,7 @@
 			"url": "",
 			"vendor": ""
 		},
-		"nextNodeId": 90,
+		"nextNodeId": 94,
 		"nodes": {
 			"38": {
 				"attributes": {
@@ -1184,7 +1207,7 @@
 				"bounds": {
 					"height": 82,
 					"width": 132,
-					"x": 1097.7802734375,
+					"x": 1403.72509765625,
 					"y": 235.564544677734375
 				},
 				"class": {
@@ -1804,17 +1827,134 @@
 				],
 				"name": "Accelation",
 				"thumbnail_visible": true
+			},
+			"92": {
+				"attributes": {
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"mode": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 105.258514404296875,
+					"width": 195,
+					"x": 1137.8685302734375,
+					"y": 236.5033721923828125
+				},
+				"class": {
+					"id": "77697265-9518-4E69-899B-66B8C527C6EB",
+					"version": 3
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"bypass": {
+						"type": "bool",
+						"value": false
+					},
+					"color": {
+						"type": "color",
+						"value": [
+							1,
+							0,
+							0,
+							1
+						]
+					},
+					"contrast": {
+						"type": "float",
+						"value": 0.20000000298023224
+					},
+					"greysKeep": {
+						"type": "bool",
+						"value": false
+					},
+					"greysTolerance": {
+						"type": "float",
+						"value": 0.30000001192092896
+					},
+					"input": {
+						"type": "texture2d",
+						"value": null
+					},
+					"invert": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"hidden": [
+					"bypass",
+					"greysKeep",
+					"greysTolerance",
+					"instances",
+					"mode"
+				],
+				"name": "Colorize",
+				"thumbnail_visible": true
+			},
+			"93": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": 907.32373046875,
+					"y": -100.563079833984375
+				},
+				"class": {
+					"id": "77697265-4C9E-4F75-B4F0-5415B713EA1B",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ff02bbff",
+				"constants": {
+					"input": {
+						"type": "color",
+						"value": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				"hidden": [
+					"flow",
+					"instances",
+					"options-count",
+					"widget"
+				],
+				"name": "Color In",
+				"thumbnail_visible": true
 			}
 		},
 		"ui": {
 			"camera": {
-				"x": -1968.929443359375,
-				"y": -624.32891845703125,
-				"zoom": 0.53500735759735107
+				"x": 194.2334136962890625,
+				"y": -429.45172119140625,
+				"zoom": 0.66891944408416748
 			},
-			"selection": [
-				"72"
-			]
+			"selection": []
 		}
 	},
 	"ui": {
