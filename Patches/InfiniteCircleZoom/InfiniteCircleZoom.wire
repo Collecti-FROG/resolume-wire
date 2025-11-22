@@ -8,26 +8,6 @@
 		"connections": [
 			{
 				"from": [
-					39,
-					"output"
-				],
-				"to": [
-					38,
-					"radius"
-				]
-			},
-			{
-				"from": [
-					41,
-					"output"
-				],
-				"to": [
-					40,
-					"radius"
-				]
-			},
-			{
-				"from": [
 					43,
 					"output"
 				],
@@ -44,26 +24,6 @@
 				"to": [
 					42,
 					"opacity1"
-				]
-			},
-			{
-				"from": [
-					45,
-					"output"
-				],
-				"to": [
-					44,
-					"radius"
-				]
-			},
-			{
-				"from": [
-					47,
-					"output"
-				],
-				"to": [
-					46,
-					"radius"
 				]
 			},
 			{
@@ -245,6 +205,186 @@
 					56,
 					"input"
 				]
+			},
+			{
+				"from": [
+					43,
+					"output"
+				],
+				"to": [
+					49,
+					"opacity2"
+				]
+			},
+			{
+				"from": [
+					43,
+					"output"
+				],
+				"to": [
+					49,
+					"opacity1"
+				]
+			},
+			{
+				"from": [
+					81,
+					"output"
+				],
+				"to": [
+					38,
+					"radius"
+				]
+			},
+			{
+				"from": [
+					82,
+					"output"
+				],
+				"to": [
+					40,
+					"radius"
+				]
+			},
+			{
+				"from": [
+					84,
+					"output"
+				],
+				"to": [
+					44,
+					"radius"
+				]
+			},
+			{
+				"from": [
+					85,
+					"output0"
+				],
+				"to": [
+					84,
+					"phase-offset"
+				]
+			},
+			{
+				"from": [
+					83,
+					"output0"
+				],
+				"to": [
+					82,
+					"phase-offset"
+				]
+			},
+			{
+				"from": [
+					87,
+					"output0"
+				],
+				"to": [
+					86,
+					"phase-offset"
+				]
+			},
+			{
+				"from": [
+					86,
+					"output"
+				],
+				"to": [
+					46,
+					"radius"
+				]
+			},
+			{
+				"from": [
+					88,
+					"output0"
+				],
+				"to": [
+					81,
+					"phase-offset"
+				]
+			},
+			{
+				"from": [
+					88,
+					"output0"
+				],
+				"to": [
+					83,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					88,
+					"output0"
+				],
+				"to": [
+					85,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					88,
+					"output0"
+				],
+				"to": [
+					87,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					72,
+					"output"
+				],
+				"to": [
+					88,
+					"input0"
+				]
+			},
+			{
+				"from": [
+					89,
+					"output"
+				],
+				"to": [
+					81,
+					"frequency"
+				]
+			},
+			{
+				"from": [
+					89,
+					"output"
+				],
+				"to": [
+					82,
+					"frequency"
+				]
+			},
+			{
+				"from": [
+					89,
+					"output"
+				],
+				"to": [
+					84,
+					"frequency"
+				]
+			},
+			{
+				"from": [
+					89,
+					"output"
+				],
+				"to": [
+					86,
+					"frequency"
+				]
 			}
 		],
 		"inputOrder": {
@@ -255,6 +395,12 @@
 				},
 				{
 					"node": 55
+				},
+				{
+					"node": 72
+				},
+				{
+					"node": 89
 				}
 			]
 		},
@@ -302,7 +448,7 @@
 			"url": "",
 			"vendor": ""
 		},
-		"nextNodeId": 57,
+		"nextNodeId": 90,
 		"nodes": {
 			"38": {
 				"attributes": {
@@ -312,7 +458,7 @@
 					}
 				},
 				"bounds": {
-					"height": 57.97546005249023438,
+					"height": 58,
 					"width": 195,
 					"x": -59.3062744140625,
 					"y": 98.020477294921875
@@ -335,64 +481,6 @@
 				"name": "Circle",
 				"thumbnail_visible": true
 			},
-			"39": {
-				"attributes": {
-					"anti-alias": {
-						"type": "bool",
-						"value": false
-					},
-					"instances": {
-						"type": "integer",
-						"value": 1
-					},
-					"unipolar": {
-						"type": "bool",
-						"value": false
-					}
-				},
-				"bounds": {
-					"height": 131.411041259765625,
-					"width": 195,
-					"x": -287.7802734375,
-					"y": 124.534271240234375
-				},
-				"class": {
-					"id": "77697265-F95F-41D8-8FC4-DF0DC56E1051",
-					"version": 1
-				},
-				"clock": "video",
-				"color": "ffff6a00",
-				"constants": {
-					"amplitude": {
-						"type": "float",
-						"value": 1
-					},
-					"frequency": {
-						"type": "float",
-						"value": 0.25
-					},
-					"offset": {
-						"type": "float",
-						"value": 1
-					},
-					"phase-offset": {
-						"type": "float",
-						"value": 0
-					},
-					"reset-phase": {
-						"type": "trigger",
-						"value": null
-					}
-				},
-				"hidden": [
-					"anti-alias",
-					"instances",
-					"reset-phase",
-					"unipolar"
-				],
-				"name": "Saw Oscillator",
-				"thumbnail_visible": true
-			},
 			"40": {
 				"attributes": {
 					"instances": {
@@ -401,7 +489,7 @@
 					}
 				},
 				"bounds": {
-					"height": 57.97546005249023438,
+					"height": 58,
 					"width": 195,
 					"x": -59.3062744140625,
 					"y": 254.020477294921875
@@ -415,71 +503,13 @@
 				"constants": {
 					"radius": {
 						"type": "float",
-						"value": 0.5
+						"value": 0
 					}
 				},
 				"hidden": [
 					"instances"
 				],
 				"name": "Circle",
-				"thumbnail_visible": true
-			},
-			"41": {
-				"attributes": {
-					"anti-alias": {
-						"type": "bool",
-						"value": false
-					},
-					"instances": {
-						"type": "integer",
-						"value": 1
-					},
-					"unipolar": {
-						"type": "bool",
-						"value": false
-					}
-				},
-				"bounds": {
-					"height": 131.411041259765625,
-					"width": 195,
-					"x": -287.7802734375,
-					"y": 280.534271240234375
-				},
-				"class": {
-					"id": "77697265-F95F-41D8-8FC4-DF0DC56E1051",
-					"version": 1
-				},
-				"clock": "video",
-				"color": "ffff6a00",
-				"constants": {
-					"amplitude": {
-						"type": "float",
-						"value": 1
-					},
-					"frequency": {
-						"type": "float",
-						"value": 0.25
-					},
-					"offset": {
-						"type": "float",
-						"value": 1
-					},
-					"phase-offset": {
-						"type": "float",
-						"value": 0.25
-					},
-					"reset-phase": {
-						"type": "trigger",
-						"value": null
-					}
-				},
-				"hidden": [
-					"anti-alias",
-					"instances",
-					"reset-phase",
-					"unipolar"
-				],
-				"name": "Saw Oscillator",
 				"thumbnail_visible": true
 			},
 			"42": {
@@ -516,7 +546,7 @@
 					}
 				},
 				"bounds": {
-					"height": 131.411041259765625,
+					"height": 130,
 					"width": 195,
 					"x": 589.205078125,
 					"y": 76.26888275146484375
@@ -645,7 +675,7 @@
 					}
 				},
 				"bounds": {
-					"height": 57.97546005249023438,
+					"height": 58,
 					"width": 195,
 					"x": -58.75067138671875,
 					"y": 467.658660888671875
@@ -659,71 +689,13 @@
 				"constants": {
 					"radius": {
 						"type": "float",
-						"value": 0.5
+						"value": 0
 					}
 				},
 				"hidden": [
 					"instances"
 				],
 				"name": "Circle",
-				"thumbnail_visible": true
-			},
-			"45": {
-				"attributes": {
-					"anti-alias": {
-						"type": "bool",
-						"value": false
-					},
-					"instances": {
-						"type": "integer",
-						"value": 1
-					},
-					"unipolar": {
-						"type": "bool",
-						"value": false
-					}
-				},
-				"bounds": {
-					"height": 131.411041259765625,
-					"width": 195,
-					"x": -287.22467041015625,
-					"y": 494.172454833984375
-				},
-				"class": {
-					"id": "77697265-F95F-41D8-8FC4-DF0DC56E1051",
-					"version": 1
-				},
-				"clock": "video",
-				"color": "ffff6a00",
-				"constants": {
-					"amplitude": {
-						"type": "float",
-						"value": 1
-					},
-					"frequency": {
-						"type": "float",
-						"value": 0.25
-					},
-					"offset": {
-						"type": "float",
-						"value": 1
-					},
-					"phase-offset": {
-						"type": "float",
-						"value": 0.5
-					},
-					"reset-phase": {
-						"type": "trigger",
-						"value": null
-					}
-				},
-				"hidden": [
-					"anti-alias",
-					"instances",
-					"reset-phase",
-					"unipolar"
-				],
-				"name": "Saw Oscillator",
 				"thumbnail_visible": true
 			},
 			"46": {
@@ -734,7 +706,7 @@
 					}
 				},
 				"bounds": {
-					"height": 57.97546005249023438,
+					"height": 58,
 					"width": 195,
 					"x": -58.75067138671875,
 					"y": 623.65869140625
@@ -748,71 +720,13 @@
 				"constants": {
 					"radius": {
 						"type": "float",
-						"value": 0.5
+						"value": 0
 					}
 				},
 				"hidden": [
 					"instances"
 				],
 				"name": "Circle",
-				"thumbnail_visible": true
-			},
-			"47": {
-				"attributes": {
-					"anti-alias": {
-						"type": "bool",
-						"value": false
-					},
-					"instances": {
-						"type": "integer",
-						"value": 1
-					},
-					"unipolar": {
-						"type": "bool",
-						"value": false
-					}
-				},
-				"bounds": {
-					"height": 131.411041259765625,
-					"width": 195,
-					"x": -287.22467041015625,
-					"y": 650.1724853515625
-				},
-				"class": {
-					"id": "77697265-F95F-41D8-8FC4-DF0DC56E1051",
-					"version": 1
-				},
-				"clock": "video",
-				"color": "ffff6a00",
-				"constants": {
-					"amplitude": {
-						"type": "float",
-						"value": 1
-					},
-					"frequency": {
-						"type": "float",
-						"value": 0.25
-					},
-					"offset": {
-						"type": "float",
-						"value": 1
-					},
-					"phase-offset": {
-						"type": "float",
-						"value": 0.75
-					},
-					"reset-phase": {
-						"type": "trigger",
-						"value": null
-					}
-				},
-				"hidden": [
-					"anti-alias",
-					"instances",
-					"reset-phase",
-					"unipolar"
-				],
-				"name": "Saw Oscillator",
 				"thumbnail_visible": true
 			},
 			"48": {
@@ -849,7 +763,7 @@
 					}
 				},
 				"bounds": {
-					"height": 131.411041259765625,
+					"height": 130,
 					"width": 195,
 					"x": 589.5308837890625,
 					"y": 417.370208740234375
@@ -933,7 +847,7 @@
 					}
 				},
 				"bounds": {
-					"height": 131.411041259765625,
+					"height": 130,
 					"width": 195,
 					"x": 843.672607421875,
 					"y": 235.23236083984375
@@ -967,7 +881,7 @@
 					},
 					"opacity2": {
 						"type": "float",
-						"value": 0.5
+						"value": 0.46428599953651428
 					}
 				},
 				"hidden": [
@@ -995,7 +909,7 @@
 					}
 				},
 				"bounds": {
-					"height": 57.97546005249023438,
+					"height": 58,
 					"width": 195,
 					"x": 218.3087158203125,
 					"y": 155.443695068359375
@@ -1035,7 +949,7 @@
 					}
 				},
 				"bounds": {
-					"height": 57.97546005249023438,
+					"height": 58,
 					"width": 195,
 					"x": 218.6497802734375,
 					"y": 495.09771728515625
@@ -1075,7 +989,7 @@
 					}
 				},
 				"bounds": {
-					"height": 57.97546005249023438,
+					"height": 58,
 					"width": 195,
 					"x": 218.6497802734375,
 					"y": 252.6922607421875
@@ -1115,7 +1029,7 @@
 					}
 				},
 				"bounds": {
-					"height": 57.97546005249023438,
+					"height": 58,
 					"width": 195,
 					"x": 218.6497802734375,
 					"y": 595.223876953125
@@ -1163,7 +1077,7 @@
 					}
 				},
 				"bounds": {
-					"height": 57.97546005249023438,
+					"height": 58,
 					"width": 195,
 					"x": -23.83935546875,
 					"y": -59.8923797607421875
@@ -1290,34 +1204,616 @@
 				],
 				"name": "Texture Out",
 				"thumbnail_visible": true
+			},
+			"72": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": true
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"max": {
+						"type": "float",
+						"value": 1
+					},
+					"min": {
+						"type": "float",
+						"value": 0
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": -1247.188720703125,
+					"y": -42.59605789184570312
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ff02bbff",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"max",
+					"min",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Offset",
+				"thumbnail_visible": true
+			},
+			"81": {
+				"attributes": {
+					"anti-alias": {
+						"type": "bool",
+						"value": false
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"unipolar": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"bounds": {
+					"height": 127.04167938232421875,
+					"width": 195,
+					"x": -437.39569091796875,
+					"y": 34.614105224609375
+				},
+				"class": {
+					"id": "77697265-F95F-41D8-8FC4-DF0DC56E1051",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"amplitude": {
+						"type": "float",
+						"value": 1
+					},
+					"frequency": {
+						"type": "float",
+						"value": 0
+					},
+					"offset": {
+						"type": "float",
+						"value": 1
+					},
+					"phase-offset": {
+						"type": "float",
+						"value": 0
+					},
+					"reset-phase": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"anti-alias",
+					"instances",
+					"reset-phase",
+					"unipolar"
+				],
+				"name": "Saw Oscillator",
+				"thumbnail_visible": true
+			},
+			"82": {
+				"attributes": {
+					"anti-alias": {
+						"type": "bool",
+						"value": false
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"unipolar": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"bounds": {
+					"height": 127.04167938232421875,
+					"width": 195,
+					"x": -437.107086181640625,
+					"y": 254.4296112060546875
+				},
+				"class": {
+					"id": "77697265-F95F-41D8-8FC4-DF0DC56E1051",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"amplitude": {
+						"type": "float",
+						"value": 1
+					},
+					"frequency": {
+						"type": "float",
+						"value": 0
+					},
+					"offset": {
+						"type": "float",
+						"value": 1
+					},
+					"phase-offset": {
+						"type": "float",
+						"value": 0
+					},
+					"reset-phase": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"anti-alias",
+					"instances",
+					"reset-phase",
+					"unipolar"
+				],
+				"name": "Saw Oscillator",
+				"thumbnail_visible": true
+			},
+			"83": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 84.0794677734375,
+					"width": 195,
+					"x": -760.36920166015625,
+					"y": 316.05963134765625
+				},
+				"class": {
+					"id": "77697265-A9AF-4CB4-B10F-3968B36BB63B",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					},
+					"input1": {
+						"type": "float",
+						"value": 0.25
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"size",
+					"type0",
+					"type1"
+				],
+				"name": "Add",
+				"thumbnail_visible": true
+			},
+			"84": {
+				"attributes": {
+					"anti-alias": {
+						"type": "bool",
+						"value": false
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"unipolar": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"bounds": {
+					"height": 132.9984283447265625,
+					"width": 195,
+					"x": -436.854156494140625,
+					"y": 432.15728759765625
+				},
+				"class": {
+					"id": "77697265-F95F-41D8-8FC4-DF0DC56E1051",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"amplitude": {
+						"type": "float",
+						"value": 1
+					},
+					"frequency": {
+						"type": "float",
+						"value": 0
+					},
+					"offset": {
+						"type": "float",
+						"value": 1
+					},
+					"phase-offset": {
+						"type": "float",
+						"value": 0
+					},
+					"reset-phase": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"anti-alias",
+					"instances",
+					"reset-phase",
+					"unipolar"
+				],
+				"name": "Saw Oscillator",
+				"thumbnail_visible": true
+			},
+			"85": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 84.0794677734375,
+					"width": 195,
+					"x": -760.11627197265625,
+					"y": 493.78729248046875
+				},
+				"class": {
+					"id": "77697265-A9AF-4CB4-B10F-3968B36BB63B",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					},
+					"input1": {
+						"type": "float",
+						"value": 0.5
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"size",
+					"type0",
+					"type1"
+				],
+				"name": "Add",
+				"thumbnail_visible": true
+			},
+			"86": {
+				"attributes": {
+					"anti-alias": {
+						"type": "bool",
+						"value": false
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"unipolar": {
+						"type": "bool",
+						"value": false
+					}
+				},
+				"bounds": {
+					"height": 127.0417938232421875,
+					"width": 195,
+					"x": -436.510223388671875,
+					"y": 639.0103759765625
+				},
+				"class": {
+					"id": "77697265-F95F-41D8-8FC4-DF0DC56E1051",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"amplitude": {
+						"type": "float",
+						"value": 1
+					},
+					"frequency": {
+						"type": "float",
+						"value": 0
+					},
+					"offset": {
+						"type": "float",
+						"value": 1
+					},
+					"phase-offset": {
+						"type": "float",
+						"value": 0
+					},
+					"reset-phase": {
+						"type": "trigger",
+						"value": null
+					}
+				},
+				"hidden": [
+					"anti-alias",
+					"instances",
+					"reset-phase",
+					"unipolar"
+				],
+				"name": "Saw Oscillator",
+				"thumbnail_visible": true
+			},
+			"87": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"input1-dimensions": {
+						"type": "integer",
+						"value": 1
+					},
+					"size": {
+						"type": "integer",
+						"value": 2
+					},
+					"type0": {
+						"type": "type",
+						"value": "float"
+					},
+					"type1": {
+						"type": "type",
+						"value": "float"
+					}
+				},
+				"bounds": {
+					"height": 80.2369232177734375,
+					"width": 195,
+					"x": -759.7723388671875,
+					"y": 700.64031982421875
+				},
+				"class": {
+					"id": "77697265-A9AF-4CB4-B10F-3968B36BB63B",
+					"version": 1
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					},
+					"input1": {
+						"type": "float",
+						"value": 0.75
+					}
+				},
+				"hidden": [
+					"flow",
+					"input0-dimensions",
+					"input1-dimensions",
+					"size",
+					"type0",
+					"type1"
+				],
+				"name": "Add",
+				"thumbnail_visible": true
+			},
+			"88": {
+				"attributes": {
+					"defaultValue-type": {
+						"type": "type",
+						"value": "null"
+					},
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"input0-type": {
+						"type": "type",
+						"value": "float"
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					}
+				},
+				"bounds": {
+					"height": 56.6814422607421875,
+					"width": 195,
+					"x": -1050.8978271484375,
+					"y": 252.60498046875
+				},
+				"class": {
+					"id": "77697265-E9E1-4BAC-9742-265E5207A103",
+					"version": 2
+				},
+				"clock": "video",
+				"color": "ffff6a00",
+				"constants": {
+					"input0": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"defaultValue-type",
+					"flow",
+					"input0-type",
+					"instances"
+				],
+				"name": "position",
+				"thumbnail_visible": true
+			},
+			"89": {
+				"attributes": {
+					"flow": {
+						"type": "flow",
+						"value": "signal"
+					},
+					"has-max": {
+						"type": "bool",
+						"value": true
+					},
+					"has-min": {
+						"type": "bool",
+						"value": true
+					},
+					"instances": {
+						"type": "integer",
+						"value": 1
+					},
+					"max": {
+						"type": "float",
+						"value": 1
+					},
+					"min": {
+						"type": "float",
+						"value": 0
+					},
+					"options-count": {
+						"type": "integer",
+						"value": 0
+					},
+					"unit": {
+						"type": "integer",
+						"value": 0
+					},
+					"widget": {
+						"type": "integer",
+						"value": 0
+					}
+				},
+				"bounds": {
+					"height": 82,
+					"width": 130,
+					"x": -752.313720703125,
+					"y": -59.93511962890625
+				},
+				"class": {
+					"id": "77697265-D235-4A6A-B661-02ABE55C72FF",
+					"version": 4
+				},
+				"clock": "video",
+				"color": "ff02bbff",
+				"constants": {
+					"input": {
+						"type": "float",
+						"value": 0
+					}
+				},
+				"hidden": [
+					"flow",
+					"has-max",
+					"has-min",
+					"instances",
+					"max",
+					"min",
+					"options-count",
+					"unit",
+					"widget"
+				],
+				"name": "Accelation",
+				"thumbnail_visible": true
 			}
 		},
 		"ui": {
 			"camera": {
-				"x": 51,
-				"y": -419.7637939453125,
-				"zoom": 0.77619045972824097
+				"x": -1968.929443359375,
+				"y": -624.32891845703125,
+				"zoom": 0.53500735759735107
 			},
 			"selection": [
-				"38",
-				"39",
-				"40",
-				"41",
-				"42",
-				"43",
-				"44",
-				"45",
-				"46",
-				"47",
-				"48",
-				"49",
-				"50",
-				"51",
-				"52",
-				"53",
-				"54",
-				"55",
-				"56"
+				"72"
 			]
 		}
 	},
